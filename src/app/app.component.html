@@ -1,0 +1,28 @@
+<header class="bordered">
+    <div class="group">
+        <div class="item inactive">
+            <h1>V</h1>
+        </div>
+    </div>
+
+    <div class="group"></div>
+
+    <div class="group">
+        <div *ngIf="currentPath('/map')" class="item" (click)="focusOnCharacter()" mdTooltip="Focus on character">
+            <md-icon class="md-48">my_location</md-icon>
+        </div>
+        <div class="item" (click)='toggleFullscreen()' mdTooltip="{{fullscreen ? 'Exit full screen' : 'Full screen'}}">
+            <md-icon class="md-48">{{ fullscreen ? 'fullscreen_exit' : 'fullscreen'}}</md-icon>
+        </div>
+        <div *ngIf="currentPath('/map')" class="item" (click)="goTo('settings')" mdTooltip="Show settings">
+            <md-icon class="md-48">settings</md-icon>
+        </div>
+        <div *ngIf="currentPath('/settings')" class="item" (click)="goTo('map')" mdTooltip="Show map">
+            <md-icon class="md-48">map</md-icon>
+        </div>
+    </div>
+</header>
+<section class="content">
+    <router-outlet (activate)='onActivate($event)'></router-outlet>
+</section>
+<footer class="bordered"></footer>

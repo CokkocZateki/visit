@@ -1,0 +1,15 @@
+<md-sidenav-container class="sidenav-container">
+    <md-sidenav #sidenav class="sidenav">
+        <md-list *ngIf="selected.status">
+            <h3 md-subheader>{{selected.name}} history:</h3>
+            <md-list-item *ngFor="let message of (character.intel | systemName:selected.name)">
+                <md-icon md-list-icon>message</md-icon>
+                <h4 md-line>{{ message.text }}</h4>
+                <p md-line>{{ message.timestamp | date:'mediumTime'}} - @{{ message.author }}</p>
+            </md-list-item>
+        </md-list>
+    </md-sidenav>
+    <div class="sidenav-content">
+        <div id="mynetwork"></div>
+    </div>
+</md-sidenav-container>

@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="box">
+    <md-card>
+      <md-card-header>
+        <md-card-title>Character settings:</md-card-title>
+      </md-card-header>
+      <md-card-content>
+        <md-list>
+          <md-list-item>
+            <md-select color="accent" placeholder="Select character" [(ngModel)]="character">
+              <md-option *ngFor="let character of characters" [value]="character">
+                {{character.name}}
+              </md-option>
+            </md-select>
+          </md-list-item>
+          <md-list-item>
+            <md-select color="accent" placeholder="Select channel" [(ngModel)]="channel" name="food" [disabled]="!character" size="3">
+              <div *ngIf="character">
+                <md-option *ngFor="let channel of character.channels" [value]="channel" (click)='updateSettings()'>
+                  {{channel.name}}
+                </md-option>
+              </div>
+            </md-select>
+          </md-list-item>
+        </md-list>
+      </md-card-content>
+    </md-card>
+  </div>
+</div>

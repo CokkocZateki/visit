@@ -1,0 +1,31 @@
+$black: black;
+$grey: #424242;
+$white: #d3d3d3;
+#mynetwork {
+    height: 100%;
+    width: 100%;
+}
+
+.sidenav-container {
+    height: 100%;
+    background: transparent;
+    .sidenav-content {
+        height: 100%;
+    }
+    .sidenav {
+        color: $grey;
+        h3, md-icon, p {
+            color: $grey;
+        }
+        h4 {
+            color: $white;
+        }
+    }
+}
+
+md-sidenav {
+    width: 300px;
+    background-color: $black;
+    color: $grey;
+    border-right: 1px solid $grey;
+}

@@ -1,0 +1,37 @@
+<div class="flex-container">
+  <div class="row">
+
+    <div class="container">
+      <app-character></app-character>
+      <div class="settings">
+        <md-card>
+          <md-card-header>
+            <md-card-title>Application settings:</md-card-title>
+          </md-card-header>
+          <md-card-content>
+            <md-list>
+              <md-list-item>
+                <md-checkbox [(ngModel)]="settings.voice.enable">Voice notifications</md-checkbox>
+              </md-list-item>
+              <md-list-item>
+                <h4 md-line>Sample:</h4>
+                <button md-raised-button style="width:75%" (click)="playSample()" [disabled]="!settings.voice.enable"><md-icon>play_arrow</md-icon></button>
+              </md-list-item>
+              <md-list-item>
+                  <h4 md-line>Distance:</h4>
+                <md-slider thumbLabel [disabled]="!settings.voice.enable" min="1" max="10" step="1" [thumb-label]="settings.voice.range"
+                  [(ngModel)]="settings.voice.range">11</md-slider>
+              </md-list-item>
+            </md-list>
+          </md-card-content>
+        </md-card>
+      </div>
+    </div>
+    <div class="container center">
+      <div class="save">
+        <button md-fab (click)="saveSettings()"><md-icon>check</md-icon></button>
+      </div>
+    </div>
+
+  </div>
+</div>
