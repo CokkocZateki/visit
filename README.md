@@ -15,7 +15,7 @@ Cross-platform app which analyses and visualizes data from the selected intel in
 
 ## Installation
 
-The application is based on [electron](https://electron.atom.io/), which in turn uses [Chromium](https://www.chromium.org/Home), in order to be used on any operating system. Installation packages are available on the [release](/releases/latest) page.
+The application is based on [electron](https://electron.atom.io/), which in turn uses [Chromium](https://www.chromium.org/Home), in order to be used on any operating system. Installation packages are available on the [release](https://github.com/gemoroy/visit/releases/latest) page.
 
 ### Installation notes
 
@@ -24,7 +24,7 @@ In order to find the directory, you need to use an `Explorer`. You need to indic
 
 ## Questions and Suggestions
 
-You can report a problem or ask questions either with the help of github on [Issues](/issues/new) page or EVE-mail [Lucien La'bar](https://gate.eveonline.com/Profile/Lucien%20La'bar)
+You can report a problem or ask questions either with the help of github on [Issues](https://github.com/gemoroy/visit/issues/new) page or EVE-mail [Lucien La'bar](https://gate.eveonline.com/Profile/Lucien%20La'bar)
 
 ## TODO
 

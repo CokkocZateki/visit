@@ -15,7 +15,7 @@
 
 ## Установка
 
-Приложение построено на основе [electron](https://electron.atom.io/), который в свою очередь использует [Chromium](https://www.chromium.org/Home), в связи с чем использоваться может на любой из операционных систем. Инсталяционные пакеты доступны на старнице с [релизами](/releases/latest) 
+Приложение построено на основе [electron](https://electron.atom.io/), который в свою очередь использует [Chromium](https://www.chromium.org/Home), в связи с чем использоваться может на любой из операционных систем. Инсталяционные пакеты доступны на старнице с [релизами](https://github.com/gemoroy/visit/releases/latest) 
 
 
 ### Особенности установки
@@ -25,7 +25,7 @@
 
 ### Вопросы и предложения
 
-Сообщить о проблеме или задать вопрос вы можете как с помощью github, на странице [issues](/issues/new), так и письмом на [Lucien La'bar](https://gate.eveonline.com/Profile/Lucien%20La'bar)
+Сообщить о проблеме или задать вопрос вы можете как с помощью github, на странице [issues](https://github.com/gemoroy/visit/issues/new), так и письмом на [Lucien La'bar](https://gate.eveonline.com/Profile/Lucien%20La'bar)
 
 ### Что дальше
 
